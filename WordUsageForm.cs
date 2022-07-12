@@ -7,7 +7,6 @@ namespace WordUsageProject
             InitializeComponent();
         }
 
-
         private void WordUsageForm_Load(object sender, EventArgs e)
         {
             
@@ -17,24 +16,15 @@ namespace WordUsageProject
                 // TODO Add allowance for comments and empty lines
                 if (!word.Equals("") && word.ToCharArray()[0] != '#' )
                 {
-                    wordToLocate.Items.Add(word);
+                    WordToLocate.Items.Add(word);
                 }
             }
         }
 
-        private void wordToLocate_SelectedIndexChanged(object sender, EventArgs e)
+        private void WordToLocate_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // Word to search for: WordToLocate.SelectedItem.ToString();
         }
 
-        private void finalCountTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void descriptionLabel_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

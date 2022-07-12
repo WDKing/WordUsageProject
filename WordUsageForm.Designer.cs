@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.wordToLocate = new System.Windows.Forms.ComboBox();
+            this.WordToLocate = new System.Windows.Forms.ComboBox();
             this.WordToChooseLabel = new System.Windows.Forms.Label();
             this.FinalCountTextBox = new System.Windows.Forms.TextBox();
             this.HeaderLabel = new System.Windows.Forms.Label();
             this.DescriptionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // wordToLocate
+            // WordToLocate
             // 
-            this.wordToLocate.FormattingEnabled = true;
-            this.wordToLocate.Location = new System.Drawing.Point(215, 96);
-            this.wordToLocate.Name = "wordToLocate";
-            this.wordToLocate.Size = new System.Drawing.Size(332, 23);
-            this.wordToLocate.TabIndex = 0;
-            this.wordToLocate.SelectedIndexChanged += new System.EventHandler(this.wordToLocate_SelectedIndexChanged);
+            this.WordToLocate.FormattingEnabled = true;
+            this.WordToLocate.Location = new System.Drawing.Point(215, 96);
+            this.WordToLocate.Name = "WordToLocate";
+            this.WordToLocate.Size = new System.Drawing.Size(332, 23);
+            this.WordToLocate.TabIndex = 0;
+            this.WordToLocate.SelectedIndexChanged += new System.EventHandler(this.WordToLocate_SelectedIndexChanged);
             // 
             // WordToChooseLabel
             // 
@@ -60,7 +60,6 @@
             this.FinalCountTextBox.Name = "FinalCountTextBox";
             this.FinalCountTextBox.Size = new System.Drawing.Size(535, 23);
             this.FinalCountTextBox.TabIndex = 2;
-            this.FinalCountTextBox.TextChanged += new System.EventHandler(this.descriptionLabel_TextChanged);
             // 
             // HeaderLabel
             // 
@@ -72,25 +71,25 @@
             this.HeaderLabel.TabIndex = 3;
             this.HeaderLabel.Text = "Moby Dick Project";
             // 
-            // label1
+            // DescriptionLabel
             // 
             this.DescriptionLabel.AutoSize = true;
             this.DescriptionLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DescriptionLabel.Location = new System.Drawing.Point(12, 52);
-            this.DescriptionLabel.Name = "label1";
+            this.DescriptionLabel.Name = "DescriptionLabel";
             this.DescriptionLabel.Size = new System.Drawing.Size(527, 21);
             this.DescriptionLabel.TabIndex = 4;
             this.DescriptionLabel.Text = "This project displays the count of the chosen word in the text of Moby Dick.";
             // 
-            // WordCountForm
+            // WordUsageProjectForm
             // 
             this.ClientSize = new System.Drawing.Size(562, 223);
             this.Controls.Add(this.DescriptionLabel);
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.FinalCountTextBox);
             this.Controls.Add(this.WordToChooseLabel);
-            this.Controls.Add(this.wordToLocate);
-            this.Name = "WordCountForm";
+            this.Controls.Add(this.WordToLocate);
+            this.Name = "WordUsageProjectForm";
             this.Load += new System.EventHandler(this.WordUsageForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -99,7 +98,7 @@
 
         #endregion
 
-        private ComboBox wordToLocate;
+        private ComboBox WordToLocate;
         private Label WordToChooseLabel;
         private TextBox FinalCountTextBox;
         private Label HeaderLabel;
