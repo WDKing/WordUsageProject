@@ -12,10 +12,13 @@ namespace WordUsageProject
         {
             
             string[] wordList = File.ReadAllLines(@"TextFiles\stop-word-list.txt");
-            foreach (var word in wordList)
+            foreach (string word in wordList)
             {
                 // TODO Add allowance for comments and empty lines
-                wordToLocate.Items.Add(word);
+                if (!word.Equals("") && word.ToCharArray()[0] != '#' )
+                {
+                    wordToLocate.Items.Add(word);
+                }
             }
         }
 
